@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Общие стили для шапки */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  background-image: url('img/shapfon.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+  height: 120px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 37px;
+  margin-top: -75px;
+  margin-left: -970px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin-top: -30px;
+  margin-right: -75px;
+  margin-left: -970px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  margin-right: -10px;
+  margin-top: 0px;
+  margin-left: -1150px;
+}
+
+.header .buttons {
+  display: flex;
+}
+
+.header .buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: gold;
+  border: 1px solid gold;
+  border-radius: 5px;
+  color: #000;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.header .buttons button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Стили для фона всего экрана */
+body {
+  background-image: url('img/fon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Стили для ПК */
+@media screen and (min-width: 768px) {
+  .header::before,
+  .header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: gold;
+  }
+  
+  .header::before {
+    top: 0;
+  }
+  
+  .header::after {
+    bottom: 0;
+  }
+
+        .button {
+            background-color: gold;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 100px;
+        }
+
+        .button-right {
+            background-color: gold;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 225px;
+        }
+
+        .button-right2 {
+            background-color: gold;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 333px;
+        }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="img/logo.png" style="width: 90px; height: 90px;">
+  <h1>FLUX</h1>
+  <h2>ДИЗАЙН-СТУДИЯ</h2>
+  <div class="buttons">
+    <button>Отзывы</button>
+    <button>ВКонтакте</button>
+    <button>Заказать</button>
+  </div>
+</div>
+
+<!-- Остальной контент страницы -->
+
+</body>
+</html>
